@@ -6,7 +6,7 @@ type Tarea = {
 export const Tarea = ({tarea, borrarTarea}: Tarea) => {
     return(
         <div className="task">
-            <span>{tarea}</span>
+            <span className="taskTitle">{tarea}</span>
             <button onClick={borrarTarea}>Borrar Tarea</button>
         </div>
     )
